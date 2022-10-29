@@ -1,0 +1,3 @@
+17:31:55    93 --> ...                                                                          [tcl] ucliGUI::start /afs/ee.ust.hk/staff/ee/bxieaf/eesm5020/risc_baohui/layout_sim/simv -ucligui 
+17:31:55    94 --> ...                                                                              [tcl] set ucliGUI::state
+17:31:55    95 --> ...                                                                                  [tcl] gui_update_simulator_buttons

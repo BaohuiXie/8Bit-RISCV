@@ -1,0 +1,5 @@
+/afs/ee.ust.hk/staff/ee/bxieaf/eesm5020/risc_baohui/layout/results/riscv8bit.routed.v
+/afs/ee.ust.hk/staff/ee/bxieaf/eesm5020/risc_baohui/rtl/data_memory.v
+/afs/ee.ust.hk/staff/ee/bxieaf/eesm5020/risc_baohui/rtl/instruction_memory.v
+/afs/ee.ust.hk/staff/ee/bxieaf/eesm5020/risc_baohui/tb/riscv8bit_tb.v
+/afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Verilog/NangateOpenCellLibrary.v

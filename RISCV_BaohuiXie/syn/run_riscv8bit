@@ -1,0 +1,3 @@
+#!/bin/sh
+
+dc_shell -f riscv8bit.tcl | tee -i run_riscv8bit.log

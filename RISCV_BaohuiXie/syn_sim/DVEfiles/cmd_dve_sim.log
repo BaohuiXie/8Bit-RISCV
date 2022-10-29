@@ -1,0 +1,36 @@
+set ucliGUI::state
+set ucliGUI::state
+ucliCore::getToolPID
+synopsys::env hasTB
+trigger_hier_stack_context_switch 0
+synUtils::setDVEInitPhase 1
+synopsys::dump -type VPD -file /afs/ee.ust.hk/staff/ee/bxieaf/eesm5020/risc_baohui/syn_sim/inter.vpd -locking
+synopsys::dump -autoflush on -fid VPD0
+set ::dve_fid VPD0
+synUtils::setDVEInitPhase 0
+ucliCore::getToolPID
+synUtils::sendTool -active _icl_setToolSocket /tmp/smlnpt7YRaY
+synUtils::sendTool -active {_icl_start_rpc -version "Q-2020.03-SP1-1_Full64" -sync_file /tmp/vcs_dve_rpc.bxieaf.4419}
+synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.bxieaf.4419}
+config endofsim noexit
+config onfail enable all
+config syscaddplainmembers
+config syscaddsourcenames
+config syscaddstructtypes
+synopsys::listing -disable
+synopsys::dump -add {riscv8bit_tb.data_memory1} -scope "." -depth 1 -fid VPD0
+synopsys::dump -add {riscv8bit_tb.data_memory1.ram_memory } -aggregates  -fid VPD0
+synopsys::run
+set ucliGUI::state
+set ucliGUI::state
+set ucliGUI::state
+set ucliGUI::state
+ucliGUI::getSignalValues -scope riscv8bit_tb.data_memory1 -radix {decimal } -list {{read_ram_data[7:0]} }
+ucliGUI::getSignalValues -scope riscv8bit_tb.data_memory1 -radix {decimal } -list {{address_ram[7:0]} }
+ucliGUI::getSignalValues -scope riscv8bit_tb.data_memory1 -radix {decimal } -list {ram_memory }
+ucliGUI::getSignalValues -scope riscv8bit_tb.data_memory1 -radix {decimal } -list {{write_data[7:0]} }
+if [catch {gui_sim_terminate}] {gui_sim_terminate -kill}
+synopsys::finish
+set ucliGUI::state
+set ucliGUI::state
+ucli_exit

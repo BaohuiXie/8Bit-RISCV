@@ -1,0 +1,35 @@
+ 
+****************************************
+check_design summary:
+Version:     P-2019.03-SP5
+Date:        Sun May 29 01:14:21 2022
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                     12
+    Unconnected ports (LINT-28)                                     3
+    Feedthrough (LINT-29)                                           8
+    Shorted outputs (LINT-31)                                       1
+
+Cells                                                               4
+    Cells do not drive (LINT-1)                                     4
+--------------------------------------------------------------------------------
+
+Warning: In design 'alu', cell 'C316' does not drive any nets. (LINT-1)
+Warning: In design 'alu', cell 'C317' does not drive any nets. (LINT-1)
+Warning: In design 'alu', cell 'C318' does not drive any nets. (LINT-1)
+Warning: In design 'alu', cell 'C319' does not drive any nets. (LINT-1)
+Warning: In design 'alu', port 'instruction[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'alu', port 'instruction[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'alu', port 'instruction[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'id_to_wb', input port 'ram_data[7]' is connected directly to output port 'data_from_ram[7]'. (LINT-29)
+Warning: In design 'id_to_wb', input port 'ram_data[6]' is connected directly to output port 'data_from_ram[6]'. (LINT-29)
+Warning: In design 'id_to_wb', input port 'ram_data[5]' is connected directly to output port 'data_from_ram[5]'. (LINT-29)
+Warning: In design 'id_to_wb', input port 'ram_data[4]' is connected directly to output port 'data_from_ram[4]'. (LINT-29)
+Warning: In design 'id_to_wb', input port 'ram_data[3]' is connected directly to output port 'data_from_ram[3]'. (LINT-29)
+Warning: In design 'id_to_wb', input port 'ram_data[2]' is connected directly to output port 'data_from_ram[2]'. (LINT-29)
+Warning: In design 'id_to_wb', input port 'ram_data[1]' is connected directly to output port 'data_from_ram[1]'. (LINT-29)
+Warning: In design 'id_to_wb', input port 'ram_data[0]' is connected directly to output port 'data_from_ram[0]'. (LINT-29)
+Warning: In design 'control', output port 'mem_read' is connected directly to output port 'mem_to_reg'. (LINT-31)
+1

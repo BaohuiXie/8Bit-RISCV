@@ -1,0 +1,15 @@
+/afs/ee.ust.hk/staff/ee/bxieaf/eesm5020/risc_baohui/rtl/EXMEM.v
+/afs/ee.ust.hk/staff/ee/bxieaf/eesm5020/risc_baohui/rtl/IDEX.v
+/afs/ee.ust.hk/staff/ee/bxieaf/eesm5020/risc_baohui/rtl/IFID.v
+/afs/ee.ust.hk/staff/ee/bxieaf/eesm5020/risc_baohui/rtl/MEMWB.v
+/afs/ee.ust.hk/staff/ee/bxieaf/eesm5020/risc_baohui/rtl/alu.v
+/afs/ee.ust.hk/staff/ee/bxieaf/eesm5020/risc_baohui/rtl/control.v
+/afs/ee.ust.hk/staff/ee/bxieaf/eesm5020/risc_baohui/rtl/data_memory.v
+/afs/ee.ust.hk/staff/ee/bxieaf/eesm5020/risc_baohui/rtl/id.v
+/afs/ee.ust.hk/staff/ee/bxieaf/eesm5020/risc_baohui/rtl/id_and_ex.v
+/afs/ee.ust.hk/staff/ee/bxieaf/eesm5020/risc_baohui/rtl/id_to_wb.v
+/afs/ee.ust.hk/staff/ee/bxieaf/eesm5020/risc_baohui/rtl/instruction_memory.v
+/afs/ee.ust.hk/staff/ee/bxieaf/eesm5020/risc_baohui/rtl/pc.v
+/afs/ee.ust.hk/staff/ee/bxieaf/eesm5020/risc_baohui/rtl/registerfile.v
+/afs/ee.ust.hk/staff/ee/bxieaf/eesm5020/risc_baohui/rtl/riscv8bit.v
+/afs/ee.ust.hk/staff/ee/bxieaf/eesm5020/risc_baohui/tb/riscv8bit_tb.v

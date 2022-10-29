@@ -1,0 +1,17 @@
+    Hinst Name                             Module Name          Inst Count           Total Area
+--------------------------------------------------------------------------------------------
+riscv8bit                                                              673             1379.742
+ id_to_wb1                                 id_to_wb                    647             1315.104
+  id_to_wb1/id_and_ex1                     id_and_ex                   595             1185.296
+   id_to_wb1/id_and_ex1/alu1               alu                         117              176.890
+    id_to_wb1/id_and_ex1/alu1/r367         alu_DW01_add_0                9               32.452
+    id_to_wb1/id_and_ex1/alu1/r368         alu_DW01_sub_0                9               32.186
+   id_to_wb1/id_and_ex1/exmem1             exmem                        47              129.010
+   id_to_wb1/id_and_ex1/id1                id                          430              878.066
+    id_to_wb1/id_and_ex1/id1/control1      control                      13               11.970
+    id_to_wb1/id_and_ex1/id1/idex1         idex                         75              207.214
+    id_to_wb1/id_and_ex1/id1/ifid1         ifid                         33               89.908
+    id_to_wb1/id_and_ex1/id1/registerfile1 registerfile                307              566.314
+  id_to_wb1/memwb1                         memwb                        51              128.478
+ pc1                                       pc                           25               63.308
+  pc1/add_20                               pc_DW01_inc_0                 8               18.088

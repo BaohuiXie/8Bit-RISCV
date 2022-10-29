@@ -1,0 +1,42 @@
+set ucliGUI::state
+set ucliGUI::state
+ucliCore::getToolPID
+synopsys::env hasTB
+trigger_hier_stack_context_switch 0
+synUtils::setDVEInitPhase 1
+synopsys::dump -type VPD -file /afs/ee.ust.hk/staff/ee/bxieaf/eesm5020/risc_baohui/behav_sim/inter.vpd -locking
+synopsys::dump -autoflush on -fid VPD0
+set ::dve_fid VPD0
+synUtils::setDVEInitPhase 0
+ucliCore::getToolPID
+synUtils::sendTool -active _icl_setToolSocket /tmp/smlnp0MJjPd
+synUtils::sendTool -active {_icl_start_rpc -version "Q-2020.03-SP1-1_Full64" -sync_file /tmp/vcs_dve_rpc.bxieaf.3013}
+synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.bxieaf.3013}
+config endofsim noexit
+config onfail enable all
+config syscaddplainmembers
+config syscaddsourcenames
+config syscaddstructtypes
+synopsys::listing -disable
+synopsys::dump -add {riscv8bit_tb} -scope "." -depth 1 -fid VPD0
+synopsys::run
+set ucliGUI::state
+set ucliGUI::state
+set ucliGUI::state
+set ucliGUI::state
+ucliGUI::getSignalValues -scope riscv8bit_tb -radix {decimal } -list {{instruction_input_wire[15:0]} }
+ucliGUI::getSignalValues -scope riscv8bit_tb -radix {decimal } -list {{result_from_RAM[7:0]} }
+ucliGUI::getSignalValues -scope riscv8bit_tb -radix {decimal } -list {{pc_increment_address_reg[7:0]} }
+ucliGUI::getSignalValues -scope riscv8bit_tb -radix {decimal } -list {{ram_data_wire[7:0]} }
+ucliGUI::getSignalValues -scope riscv8bit_tb -radix {decimal } -list {{write_data_to_memory_reg[7:0]} }
+ucliGUI::getSignalValues -scope riscv8bit_tb -radix {decimal } -list {{alu_result_from_idandex[7:0]} }
+ucliGUI::getSignalValues -scope riscv8bit_tb -radix {decimal } -list {{ram_data[7:0]} }
+ucliGUI::getSignalValues -scope riscv8bit_tb -radix {decimal } -list {{write_data_to_memory[7:0]} }
+ucliGUI::getSignalValues -scope riscv8bit_tb -radix {decimal } -list {{pc_increment_address[7:0]} }
+ucliGUI::getSignalValues -scope riscv8bit_tb -radix {decimal } -list {{alu_result_from_idandex_reg[7:0]} }
+ucliGUI::getSignalValues -scope riscv8bit_tb -radix {decimal } -list {{instruction_input[15:0]} }
+if [catch {gui_sim_terminate}] {gui_sim_terminate -kill}
+synopsys::finish
+set ucliGUI::state
+set ucliGUI::state
+ucli_exit

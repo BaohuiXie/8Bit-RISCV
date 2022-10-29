@@ -1,0 +1,93 @@
+################################################################################
+# Filename: riscv8bit.ioc
+# Author: XIE BAOHUI
+# Email: bxieaf@connect.ust.hk
+# Affiliation: Hong Kong University of Science and Technology
+# ------------------------------------------------------------------------------
+#
+# This file defines the IO location constraint of the riscv8bit module. The input
+# pins are (on Metal 5). The output pins are (on Metal 6). The space between each
+# pin is set as 1.5um. There is an offset of 1um to ensure the module pins do
+# not have any overlap with each other. Each pin dimension is set to be 0.14um x
+# 0.14um.
+#
+# Note: if we do not provide the IO location constraint for our riscv8bit module,
+# the Encounter will randomly place our pins.
+################################################################################
+
+(globals
+    version = 3
+    io_order = default
+    space = 2
+)
+(iopin
+    (top
+	(pin name="alu_result_from_idandex[0]"	 layer=6 width=0.1400 depth=0.1400 offset=1.0)
+	(pin name="alu_result_from_idandex[1]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="alu_result_from_idandex[2]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="alu_result_from_idandex[3]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="alu_result_from_idandex[4]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="alu_result_from_idandex[5]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="alu_result_from_idandex[6]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="alu_result_from_idandex[7]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="write_data_to_memory[0]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="write_data_to_memory[1]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="write_data_to_memory[2]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="write_data_to_memory[3]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="write_data_to_memory[4]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="write_data_to_memory[5]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="write_data_to_memory[6]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="write_data_to_memory[7]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="mem_read_from_idandex"	 layer=6 width=0.1400 depth=0.1400 )
+    )
+    (left
+	(pin name="ram_data[0]"	 layer=5 width=0.1400 depth=0.1400 offset=1.0)
+	(pin name="ram_data[1]"	 layer=5 width=0.1400 depth=0.1400 )
+	(pin name="ram_data[2]"	 layer=5 width=0.1400 depth=0.1400 )
+	(pin name="ram_data[3]"	 layer=5 width=0.1400 depth=0.1400 )
+	(pin name="ram_data[4]"	 layer=5 width=0.1400 depth=0.1400 )
+	(pin name="ram_data[5]"	 layer=5 width=0.1400 depth=0.1400 )
+	(pin name="ram_data[6]"	 layer=5 width=0.1400 depth=0.1400 )
+	(pin name="ram_data[7]"	 layer=5 width=0.1400 depth=0.1400 )
+	(pin name="mem_write_from_idandex"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="data_from_ram[0]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="data_from_ram[1]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="data_from_ram[2]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="data_from_ram[3]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="data_from_ram[4]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="data_from_ram[5]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="data_from_ram[6]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="data_from_ram[7]"	 layer=6 width=0.1400 depth=0.1400 )
+    )
+    (bottom
+	(pin name="pc_increment_address[0]"	 layer=6 width=0.1400 depth=0.1400 offset=1.0)
+	(pin name="pc_increment_address[1]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="pc_increment_address[2]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="pc_increment_address[3]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="pc_increment_address[4]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="pc_increment_address[5]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="pc_increment_address[6]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="pc_increment_address[7]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="rst"	 layer=5 width=0.1400 depth=0.1400 )
+	(pin name="rst_registerfile"	 layer=5 width=0.1400 depth=0.1400 )
+	(pin name="clk"	 layer=5 width=0.1400 depth=0.1400 )
+    )
+    (right
+	(pin name="instruction_input[0]"	 layer=5 width=0.1400 depth=0.1400 offset=1.0)
+	(pin name="instruction_input[1]"	 layer=5 width=0.1400 depth=0.1400 )
+	(pin name="instruction_input[2]"	 layer=5 width=0.1400 depth=0.1400 )
+	(pin name="instruction_input[3]"	 layer=5 width=0.1400 depth=0.1400 )
+	(pin name="instruction_input[4]"	 layer=5 width=0.1400 depth=0.1400 )
+	(pin name="instruction_input[5]"	 layer=5 width=0.1400 depth=0.1400 )
+	(pin name="instruction_input[6]"	 layer=5 width=0.1400 depth=0.1400 )
+	(pin name="instruction_input[7]"	 layer=5 width=0.1400 depth=0.1400 )
+	(pin name="instruction_input[8]"	 layer=5 width=0.1400 depth=0.1400 )
+	(pin name="instruction_input[9]"	 layer=5 width=0.1400 depth=0.1400 )
+	(pin name="instruction_input[10]"	 layer=5 width=0.1400 depth=0.1400 )
+	(pin name="instruction_input[11]"	 layer=5 width=0.1400 depth=0.1400 )
+	(pin name="instruction_input[12]"	 layer=5 width=0.1400 depth=0.1400 )
+	(pin name="instruction_input[13]"	 layer=5 width=0.1400 depth=0.1400 )
+	(pin name="instruction_input[14]"	 layer=5 width=0.1400 depth=0.1400 )
+	(pin name="instruction_input[15]"	 layer=5 width=0.1400 depth=0.1400 )
+    )
+)

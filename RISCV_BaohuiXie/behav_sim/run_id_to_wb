@@ -1,0 +1,4 @@
+#!/bin/sh
+
+vcs -full64 ../rtl/id_to_wb.v ../tb/id_to_wb_tb.v +v2k -debug_all -top id_to_wb_tb \
+  -timescale=1ns/1ps

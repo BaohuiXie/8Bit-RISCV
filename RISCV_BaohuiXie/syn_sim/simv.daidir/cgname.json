@@ -1,0 +1,266 @@
+{
+    "ifid": [
+        "ifid",
+        "j6I5k",
+        "module",
+        49
+    ],
+    "registerfile": [
+        "registerfile",
+        "UWUvI",
+        "module",
+        2
+    ],
+    "control": [
+        "control",
+        "ai8Aa",
+        "module",
+        3
+    ],
+    "idex": [
+        "idex",
+        "phehg",
+        "module",
+        4
+    ],
+    "id": [
+        "id",
+        "nDpED",
+        "module",
+        5
+    ],
+    "alu_DW01_sub_0": [
+        "alu_DW01_sub_0",
+        "j8SP9",
+        "module",
+        28
+    ],
+    "alu_DW01_add_0": [
+        "alu_DW01_add_0",
+        "fYw8n",
+        "module",
+        29
+    ],
+    "alu": [
+        "alu",
+        "C26kq",
+        "module",
+        30
+    ],
+    "exmem": [
+        "exmem",
+        "WIYdr",
+        "module",
+        31
+    ],
+    "id_and_ex": [
+        "id_and_ex",
+        "LMbIY",
+        "module",
+        32
+    ],
+    "memwb": [
+        "memwb",
+        "Bgfr8",
+        "module",
+        34
+    ],
+    "id_to_wb": [
+        "id_to_wb",
+        "QutZn",
+        "module",
+        35
+    ],
+    "pc_DW01_inc_0": [
+        "pc_DW01_inc_0",
+        "QHLgi",
+        "module",
+        48
+    ],
+    "pc": [
+        "pc",
+        "EJdGq",
+        "module",
+        47
+    ],
+    "riscv8bit": [
+        "riscv8bit",
+        "LcKjF",
+        "module",
+        42
+    ],
+    "data_memory": [
+        "data_memory",
+        "ZQEUT",
+        "module",
+        33
+    ],
+    "instruction_memory": [
+        "instruction_memory",
+        "H0D0b",
+        "module",
+        40
+    ],
+    "riscv8bit_tb": [
+        "riscv8bit_tb",
+        "YsKIY",
+        "module",
+        38
+    ],
+    "AND2_X1": [
+        "AND2_X1",
+        "VuJYN",
+        "module",
+        7
+    ],
+    "AOI21_X1": [
+        "AOI21_X1",
+        "vC1RA",
+        "module",
+        39
+    ],
+    "AOI221_X1": [
+        "AOI221_X1",
+        "Yb0mY",
+        "module",
+        8
+    ],
+    "AOI222_X1": [
+        "AOI222_X1",
+        "wZ8FS",
+        "module",
+        9
+    ],
+    "AOI22_X1": [
+        "AOI22_X1",
+        "Mqjch",
+        "module",
+        10
+    ],
+    "CLKBUF_X1": [
+        "CLKBUF_X1",
+        "Qr2gM",
+        "module",
+        11
+    ],
+    "DFF_X1": [
+        "DFF_X1",
+        "ZcSdx",
+        "module",
+        12
+    ],
+    "FA_X1": [
+        "FA_X1",
+        "zGtw9",
+        "module",
+        41
+    ],
+    "HA_X1": [
+        "HA_X1",
+        "zwwDY",
+        "module",
+        37
+    ],
+    "INV_X1": [
+        "INV_X1",
+        "tIkV7",
+        "module",
+        14
+    ],
+    "NAND2_X1": [
+        "NAND2_X1",
+        "Q9D3j",
+        "module",
+        15
+    ],
+    "NAND3_X1": [
+        "NAND3_X1",
+        "dTgYn",
+        "module",
+        16
+    ],
+    "NAND4_X1": [
+        "NAND4_X1",
+        "KHv0i",
+        "module",
+        43
+    ],
+    "NOR2_X1": [
+        "NOR2_X1",
+        "niDbq",
+        "module",
+        17
+    ],
+    "NOR2_X2": [
+        "NOR2_X2",
+        "rTDQE",
+        "module",
+        27
+    ],
+    "NOR3_X1": [
+        "NOR3_X1",
+        "c6YDM",
+        "module",
+        18
+    ],
+    "NOR4_X1": [
+        "NOR4_X1",
+        "Y0MNu",
+        "module",
+        44
+    ],
+    "OAI211_X1": [
+        "OAI211_X1",
+        "vIxGc",
+        "module",
+        20
+    ],
+    "OAI21_X1": [
+        "OAI21_X1",
+        "weLWf",
+        "module",
+        21
+    ],
+    "OAI221_X1": [
+        "OAI221_X1",
+        "fmibn",
+        "module",
+        22
+    ],
+    "OAI22_X1": [
+        "OAI22_X1",
+        "DehPx",
+        "module",
+        23
+    ],
+    "OR2_X1": [
+        "OR2_X1",
+        "ZF22v",
+        "module",
+        24
+    ],
+    "OR3_X1": [
+        "OR3_X1",
+        "BUyxF",
+        "module",
+        45
+    ],
+    "XOR2_X1": [
+        "XOR2_X1",
+        "tnN2P",
+        "module",
+        46
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module",
+        25
+    ],
+    "seq_DFF_X1": [
+        "seq_DFF_X1",
+        "dnrsM",
+        "udp",
+        26
+    ]
+}

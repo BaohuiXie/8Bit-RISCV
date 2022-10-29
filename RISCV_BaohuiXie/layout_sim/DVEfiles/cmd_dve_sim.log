@@ -1,0 +1,2 @@
+ucliGUI::start /afs/ee.ust.hk/staff/ee/bxieaf/eesm5020/risc_baohui/layout_sim/simv -ucligui 
+set ucliGUI::state

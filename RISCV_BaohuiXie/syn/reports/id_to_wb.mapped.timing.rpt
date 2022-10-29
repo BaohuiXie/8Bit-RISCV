@@ -1,0 +1,238 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nets
+        -max_paths 1
+        -transition_time
+Design : id_to_wb
+Version: P-2019.03-SP5
+Date   : Sun May 29 01:14:28 2022
+****************************************
+
+Operating Conditions: slow   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: ram_data[0]
+              (input port clocked by clk)
+  Endpoint: data_from_ram[0]
+            (output port clocked by clk)
+  Path Group: FEEDTHROUGH
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  id_to_wb           5K_hvratio_1_1        NangateOpenCellLibrary
+
+Attributes:
+    d - dont_touch
+    u - dont_use
+   mo - map_only
+   so - size_only
+    i - ideal_net or ideal_network
+  inf - infeasible path
+
+  Point                        Fanout     Trans      Incr       Path      Attributes
+  ------------------------------------------------------------------------------------------
+  clock clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                        0.00       0.00
+  input external delay                               1.00       1.00 f
+  ram_data[0] (in)                         0.10      0.00       1.00 f
+  ram_data[0] (net)              2                   0.00       1.00 f
+  U8/Z (CLKBUF_X1)                         0.02      0.14       1.14 f
+  data_from_ram[0] (net)         1                   0.00       1.14 f
+  data_from_ram[0] (out)                   0.02      0.01       1.15 f
+  data arrival time                                             1.15
+
+  clock clk (rise edge)                              5.00       5.00
+  clock network delay (ideal)                        0.00       5.00
+  output external delay                             -1.00       4.00
+  data required time                                            4.00
+  ------------------------------------------------------------------------------------------
+  data required time                                            4.00
+  data arrival time                                            -1.15
+  ------------------------------------------------------------------------------------------
+  slack (MET)                                                   2.85
+
+
+  Startpoint: rst (input port clocked by clk)
+  Endpoint: id_and_ex1/id1/idex1/mem_write_idex_output_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: REGIN
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  id_to_wb           5K_hvratio_1_1        NangateOpenCellLibrary
+
+Attributes:
+    d - dont_touch
+    u - dont_use
+   mo - map_only
+   so - size_only
+    i - ideal_net or ideal_network
+  inf - infeasible path
+
+  Point                                       Fanout     Trans      Incr       Path      Attributes
+  ---------------------------------------------------------------------------------------------------------
+  clock clk (rise edge)                                             0.00       0.00
+  clock network delay (ideal)                                       0.00       0.00
+  input external delay                                              1.00       1.00 f
+  rst (in)                                                0.10      0.00       1.00 f
+  rst (net)                                    14                   0.00       1.00 f
+  id_and_ex1/rst (id_and_ex)                                        0.00       1.00 f
+  id_and_ex1/rst (net)                                              0.00       1.00 f
+  id_and_ex1/id1/rst (id)                                           0.00       1.00 f
+  id_and_ex1/id1/rst (net)                                          0.00       1.00 f
+  id_and_ex1/id1/idex1/rst (idex)                                   0.00       1.00 f
+  id_and_ex1/id1/idex1/rst (net)                                    0.00       1.00 f
+  id_and_ex1/id1/idex1/U3/ZN (INV_X1)                     0.34      0.44       1.44 r
+  id_and_ex1/id1/idex1/n6 (net)                25                   0.00       1.44 r
+  id_and_ex1/id1/idex1/U8/Z (CLKBUF_X1)                   0.16      0.36       1.80 r
+  id_and_ex1/id1/idex1/n1 (net)                13                   0.00       1.80 r
+  id_and_ex1/id1/idex1/U20/ZN (AND2_X1)                   0.03      0.15       1.95 r
+  id_and_ex1/id1/idex1/N5 (net)                 1                   0.00       1.95 r
+  id_and_ex1/id1/idex1/mem_write_idex_output_reg/D (DFF_X1)     0.03     0.01     1.96 r
+  data arrival time                                                            1.96
+
+  clock clk (rise edge)                                             5.00       5.00
+  clock network delay (ideal)                                       0.00       5.00
+  id_and_ex1/id1/idex1/mem_write_idex_output_reg/CK (DFF_X1)        0.00       5.00 r
+  library setup time                                               -0.08       4.92
+  data required time                                                           4.92
+  ---------------------------------------------------------------------------------------------------------
+  data required time                                                           4.92
+  data arrival time                                                           -1.96
+  ---------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                  2.97
+
+
+  Startpoint: id_and_ex1/exmem1/alu_result_exmem_output_reg_0_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: alu_result_from_idandex[0]
+            (output port clocked by clk)
+  Path Group: REGOUT
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  id_to_wb           5K_hvratio_1_1        NangateOpenCellLibrary
+
+Attributes:
+    d - dont_touch
+    u - dont_use
+   mo - map_only
+   so - size_only
+    i - ideal_net or ideal_network
+  inf - infeasible path
+
+  Point                                       Fanout     Trans      Incr       Path      Attributes
+  ---------------------------------------------------------------------------------------------------------
+  clock clk (rise edge)                                             0.00       0.00
+  clock network delay (ideal)                                       0.00       0.00
+  id_and_ex1/exmem1/alu_result_exmem_output_reg_0_/CK (DFF_X1)     0.00     0.00     0.00 r
+  id_and_ex1/exmem1/alu_result_exmem_output_reg_0_/Q (DFF_X1)     0.03     0.31     0.31 r
+  id_and_ex1/exmem1/alu_result_exmem_output[0] (net)     2          0.00       0.31 r
+  id_and_ex1/exmem1/alu_result_exmem_output[0] (exmem)              0.00       0.31 r
+  id_and_ex1/alu_result[0] (net)                                    0.00       0.31 r
+  id_and_ex1/alu_result[0] (id_and_ex)                              0.00       0.31 r
+  alu_result_from_idandex[0] (net)                                  0.00       0.31 r
+  alu_result_from_idandex[0] (out)                        0.03      0.01       0.32 r
+  data arrival time                                                            0.32
+
+  clock clk (rise edge)                                             5.00       5.00
+  clock network delay (ideal)                                       0.00       5.00
+  output external delay                                            -1.00       4.00
+  data required time                                                           4.00
+  ---------------------------------------------------------------------------------------------------------
+  data required time                                                           4.00
+  data arrival time                                                           -0.32
+  ---------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                  3.68
+
+
+  Startpoint: id_and_ex1/id1/idex1/alu_src_idex_output_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: id_and_ex1/exmem1/alu_result_exmem_output_reg_7_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  id_to_wb           5K_hvratio_1_1        NangateOpenCellLibrary
+
+Attributes:
+    d - dont_touch
+    u - dont_use
+   mo - map_only
+   so - size_only
+    i - ideal_net or ideal_network
+  inf - infeasible path
+
+  Point                                       Fanout     Trans      Incr       Path      Attributes
+  ---------------------------------------------------------------------------------------------------------
+  clock clk (rise edge)                                             0.00       0.00
+  clock network delay (ideal)                                       0.00       0.00
+  id_and_ex1/id1/idex1/alu_src_idex_output_reg/CK (DFF_X1)     0.00     0.00     0.00 r
+  id_and_ex1/id1/idex1/alu_src_idex_output_reg/Q (DFF_X1)     0.16     0.43     0.43 r
+  id_and_ex1/id1/idex1/alu_src_idex_output (net)     9              0.00       0.43 r
+  id_and_ex1/id1/idex1/alu_src_idex_output (idex)                   0.00       0.43 r
+  id_and_ex1/id1/alu_src (net)                                      0.00       0.43 r
+  id_and_ex1/id1/alu_src (id)                                       0.00       0.43 r
+  id_and_ex1/alu_src_from_id (net)                                  0.00       0.43 r
+  id_and_ex1/alu1/alu_src (alu)                                     0.00       0.43 r
+  id_and_ex1/alu1/alu_src (net)                                     0.00       0.43 r
+  id_and_ex1/alu1/U31/ZN (INV_X1)                         0.06      0.14       0.57 f
+  id_and_ex1/alu1/n13 (net)                     8                   0.00       0.57 f
+  id_and_ex1/alu1/U30/ZN (AOI22_X1)                       0.17      0.26       0.83 r
+  id_and_ex1/alu1/n90 (net)                     3                   0.00       0.83 r
+  id_and_ex1/alu1/U6/ZN (INV_X1)                          0.06      0.13       0.95 f
+  id_and_ex1/alu1/n29 (net)                     6                   0.00       0.95 f
+  id_and_ex1/alu1/r367/B[0] (alu_DW01_add_0)                        0.00       0.95 f
+  id_and_ex1/alu1/r367/B[0] (net)                                   0.00       0.95 f
+  id_and_ex1/alu1/r367/U1/ZN (AND2_X1)                    0.02      0.13       1.09 f
+  id_and_ex1/alu1/r367/n1 (net)                 1                   0.00       1.09 f
+  id_and_ex1/alu1/r367/U1_1/CO (FA_X1)                    0.05      0.28       1.37 f    mo 
+  id_and_ex1/alu1/r367/carry[2] (net)           1                   0.00       1.37 f
+  id_and_ex1/alu1/r367/U1_2/CO (FA_X1)                    0.05      0.30       1.67 f    mo 
+  id_and_ex1/alu1/r367/carry[3] (net)           1                   0.00       1.67 f
+  id_and_ex1/alu1/r367/U1_3/CO (FA_X1)                    0.05      0.30       1.96 f    mo 
+  id_and_ex1/alu1/r367/carry[4] (net)           1                   0.00       1.96 f
+  id_and_ex1/alu1/r367/U1_4/CO (FA_X1)                    0.05      0.30       2.26 f    mo 
+  id_and_ex1/alu1/r367/carry[5] (net)           1                   0.00       2.26 f
+  id_and_ex1/alu1/r367/U1_5/CO (FA_X1)                    0.05      0.30       2.55 f    mo 
+  id_and_ex1/alu1/r367/carry[6] (net)           1                   0.00       2.55 f
+  id_and_ex1/alu1/r367/U1_6/CO (FA_X1)                    0.05      0.30       2.85 f    mo 
+  id_and_ex1/alu1/r367/carry[7] (net)           1                   0.00       2.85 f
+  id_and_ex1/alu1/r367/U1_7/S (FA_X1)                     0.05      0.37       3.21 f    mo 
+  id_and_ex1/alu1/r367/SUM[7] (net)             1                   0.00       3.21 f
+  id_and_ex1/alu1/r367/SUM[7] (alu_DW01_add_0)                      0.00       3.21 f
+  id_and_ex1/alu1/N113 (net)                                        0.00       3.21 f
+  id_and_ex1/alu1/U34/ZN (AOI222_X1)                      0.19      0.23       3.45 r
+  id_and_ex1/alu1/n37 (net)                     1                   0.00       3.45 r
+  id_and_ex1/alu1/U32/ZN (AOI21_X1)                       0.05      0.09       3.54 f
+  id_and_ex1/alu1/alu_result[7] (net)           1                   0.00       3.54 f
+  id_and_ex1/alu1/alu_result[7] (alu)                               0.00       3.54 f
+  id_and_ex1/alu_result_from_alu[7] (net)                           0.00       3.54 f
+  id_and_ex1/exmem1/alu_result_exmem_input[7] (exmem)               0.00       3.54 f
+  id_and_ex1/exmem1/alu_result_exmem_input[7] (net)                 0.00       3.54 f
+  id_and_ex1/exmem1/U3/ZN (AND2_X1)                       0.02      0.12       3.65 f
+  id_and_ex1/exmem1/N10 (net)                   1                   0.00       3.65 f
+  id_and_ex1/exmem1/alu_result_exmem_output_reg_7_/D (DFF_X1)     0.02     0.01     3.66 f
+  data arrival time                                                            3.66
+
+  clock clk (rise edge)                                             5.00       5.00
+  clock network delay (ideal)                                       0.00       5.00
+  id_and_ex1/exmem1/alu_result_exmem_output_reg_7_/CK (DFF_X1)      0.00       5.00 r
+  library setup time                                               -0.16       4.84
+  data required time                                                           4.84
+  ---------------------------------------------------------------------------------------------------------
+  data required time                                                           4.84
+  data arrival time                                                           -3.66
+  ---------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                  1.18
+
+
+1

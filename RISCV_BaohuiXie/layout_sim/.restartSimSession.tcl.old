@@ -1,0 +1,234 @@
+# Begin_DVE_Session_Save_Info
+# DVE restart session
+# Saved on Mon May 30 17:31:54 2022
+# Designs open: 1
+#   Sim: /afs/ee.ust.hk/staff/ee/bxieaf/eesm5020/risc_baohui/layout_sim/simv
+# Toplevel windows open: 2
+# 	TopLevel.1
+# 	TopLevel.2
+#   Source.1: riscv8bit_tb.input_stimulus
+#   Wave.1: 296 signals
+#   Group count = 2
+#   Group riscv8bit_tb signal count = 19
+#   Group registerfile1 signal count = 296
+# End_DVE_Session_Save_Info
+
+# DVE version: Q-2020.03-SP1-1_Full64
+# DVE build date: Jul 19 2020 21:06:08
+
+
+#<Session mode="Restart" path=".restartSimSession.tcl" type="Debug">
+
+gui_set_loading_session_type Restart
+gui_continuetime_set
+gui_clear_window -type Wave
+gui_clear_window -type List
+
+# Application preferences
+gui_set_pref_value -key app_default_font -value {Helvetica,10,-1,5,50,0,0,0,0,0}
+gui_src_preferences -tabstop 8 -maxbits 24 -windownumber 1
+#<WindowLayout>
+
+# DVE top-level session
+
+
+# Create and position top-level window: TopLevel.1
+
+set TopLevel.1 TopLevel.1
+
+# Docked window settings
+set HSPane.1 HSPane.1
+set Hier.1 Hier.1
+set DLPane.1 DLPane.1
+set Data.1 Data.1
+set Console.1 Console.1
+gui_sync_global -id ${TopLevel.1} -option true
+
+# MDI window settings
+set Source.1 Source.1
+gui_update_layout -id ${Source.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false}}
+
+# End MDI window settings
+
+
+# Create and position top-level window: TopLevel.2
+
+set TopLevel.2 TopLevel.2
+
+# Docked window settings
+gui_sync_global -id ${TopLevel.2} -option true
+
+# MDI window settings
+set Wave.1 Wave.1
+gui_update_layout -id ${Wave.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false} {child_wave_left 476} {child_wave_right 1162} {child_wave_colname 236} {child_wave_colvalue 236} {child_wave_col1 0} {child_wave_col2 1}}
+
+# End MDI window settings
+
+
+#</WindowLayout>
+
+#<Database>
+
+gui_set_precision 1ps
+gui_set_time_units 1ps
+#</Database>
+
+# DVE Global setting session: 
+
+
+# Global: Breakpoints
+
+# Global: Bus
+
+# Global: Expressions
+
+# Global: Signal Time Shift
+
+# Global: Signal Compare
+
+# Global: Signal Groups
+gui_load_child_values {riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1}
+gui_load_child_values {riscv8bit_tb}
+
+
+set _session_group_1 riscv8bit_tb
+gui_sg_create "$_session_group_1"
+set riscv8bit_tb "$_session_group_1"
+
+gui_sg_addsignal -group "$_session_group_1" { riscv8bit_tb.rst_registerfile riscv8bit_tb.instruction_input_wire riscv8bit_tb.mem_read_from_idandex riscv8bit_tb.result_from_RAM riscv8bit_tb.pc_increment_address_reg riscv8bit_tb.ram_data_wire riscv8bit_tb.write_data_to_memory_reg riscv8bit_tb.mem_write_from_idandex_reg riscv8bit_tb.alu_result_from_idandex riscv8bit_tb.clk riscv8bit_tb.mem_read_from_idandex_reg riscv8bit_tb.ram_data riscv8bit_tb.mem_write_from_idandex riscv8bit_tb.write_data_to_memory riscv8bit_tb.pc_increment_address riscv8bit_tb.alu_result_from_idandex_reg riscv8bit_tb.instruction_input riscv8bit_tb.CLK_PERIOD riscv8bit_tb.rst }
+gui_set_radix -radix {binary} -signals {Sim:riscv8bit_tb.rst_registerfile}
+gui_set_radix -radix {decimal} -signals {Sim:riscv8bit_tb.instruction_input_wire}
+gui_set_radix -radix {unsigned} -signals {Sim:riscv8bit_tb.instruction_input_wire}
+gui_set_radix -radix {binary} -signals {Sim:riscv8bit_tb.mem_read_from_idandex}
+gui_set_radix -radix {decimal} -signals {Sim:riscv8bit_tb.result_from_RAM}
+gui_set_radix -radix {unsigned} -signals {Sim:riscv8bit_tb.result_from_RAM}
+gui_set_radix -radix {decimal} -signals {Sim:riscv8bit_tb.pc_increment_address_reg}
+gui_set_radix -radix {unsigned} -signals {Sim:riscv8bit_tb.pc_increment_address_reg}
+gui_set_radix -radix {decimal} -signals {Sim:riscv8bit_tb.ram_data_wire}
+gui_set_radix -radix {unsigned} -signals {Sim:riscv8bit_tb.ram_data_wire}
+gui_set_radix -radix {decimal} -signals {Sim:riscv8bit_tb.write_data_to_memory_reg}
+gui_set_radix -radix {unsigned} -signals {Sim:riscv8bit_tb.write_data_to_memory_reg}
+gui_set_radix -radix {binary} -signals {Sim:riscv8bit_tb.mem_write_from_idandex_reg}
+gui_set_radix -radix {decimal} -signals {Sim:riscv8bit_tb.alu_result_from_idandex}
+gui_set_radix -radix {unsigned} -signals {Sim:riscv8bit_tb.alu_result_from_idandex}
+gui_set_radix -radix {binary} -signals {Sim:riscv8bit_tb.clk}
+gui_set_radix -radix {binary} -signals {Sim:riscv8bit_tb.mem_read_from_idandex_reg}
+gui_set_radix -radix {decimal} -signals {Sim:riscv8bit_tb.ram_data}
+gui_set_radix -radix {unsigned} -signals {Sim:riscv8bit_tb.ram_data}
+gui_set_radix -radix {binary} -signals {Sim:riscv8bit_tb.mem_write_from_idandex}
+gui_set_radix -radix {decimal} -signals {Sim:riscv8bit_tb.write_data_to_memory}
+gui_set_radix -radix {unsigned} -signals {Sim:riscv8bit_tb.write_data_to_memory}
+gui_set_radix -radix {decimal} -signals {Sim:riscv8bit_tb.pc_increment_address}
+gui_set_radix -radix {unsigned} -signals {Sim:riscv8bit_tb.pc_increment_address}
+gui_set_radix -radix {decimal} -signals {Sim:riscv8bit_tb.alu_result_from_idandex_reg}
+gui_set_radix -radix {unsigned} -signals {Sim:riscv8bit_tb.alu_result_from_idandex_reg}
+gui_set_radix -radix {decimal} -signals {Sim:riscv8bit_tb.instruction_input}
+gui_set_radix -radix {unsigned} -signals {Sim:riscv8bit_tb.instruction_input}
+gui_set_radix -radix {decimal} -signals {Sim:riscv8bit_tb.CLK_PERIOD}
+gui_set_radix -radix {twosComplement} -signals {Sim:riscv8bit_tb.CLK_PERIOD}
+gui_set_radix -radix {binary} -signals {Sim:riscv8bit_tb.rst}
+
+set _session_group_2 registerfile1
+gui_sg_create "$_session_group_2"
+set registerfile1 "$_session_group_2"
+
+gui_sg_addsignal -group "$_session_group_2" { riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n205 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n162 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n206 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n163 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n207 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n164 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n208 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n165 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n209 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n166 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n167 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n168 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n169 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n50 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n51 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n52 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n53 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n54 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n55 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n56 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n57 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n58 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n59 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n210 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n211 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n212 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n213 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n170 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n214 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n171 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n215 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n172 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n216 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n173 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n217 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n174 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n218 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n175 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n219 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n176 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n177 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n178 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n179 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n60 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n61 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n62 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n63 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n64 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n65 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n66 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n67 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n68 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n69 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n220 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n221 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n222 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n223 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n180 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n224 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n181 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n225 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n182 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n226 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n183 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.clk_clone1 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n227 }
+gui_sg_addsignal -group "$_session_group_2" { riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n184 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.clk_clone2 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n228 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n185 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.clk_clone3 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n229 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n186 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n187 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n188 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n189 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n70 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n71 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n72 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n73 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n74 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n75 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n76 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n77 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n78 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n79 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n230 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n231 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n232 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n233 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n190 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n234 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n191 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n235 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n192 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n236 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n193 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n237 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n194 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n238 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n195 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n239 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n196 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n197 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n198 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n199 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n80 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n81 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n82 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n83 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n84 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n85 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n86 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n87 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n88 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n89 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n240 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n241 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n242 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n243 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n244 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n245 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n246 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n247 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n248 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n249 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n1 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n2 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n3 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n4 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n5 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n6 }
+gui_sg_addsignal -group "$_session_group_2" { riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n7 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n8 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n90 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n9 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n91 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n92 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n93 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n94 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n95 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n96 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n97 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n98 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n99 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n250 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n251 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n252 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n253 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n254 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n255 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n256 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n257 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n258 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.rst riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n259 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n260 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n261 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n262 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n263 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n264 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n265 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n266 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n267 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n268 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n269 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n100 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n101 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.write_data riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n102 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n103 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n104 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n105 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n106 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n107 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n108 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n109 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n270 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n271 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n272 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n273 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n274 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n275 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n276 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n277 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n278 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n279 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n110 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n111 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n112 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n113 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n114 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n115 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n116 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n117 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n118 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n119 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n280 }
+gui_sg_addsignal -group "$_session_group_2" { riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n281 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n282 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n283 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n120 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n121 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n122 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n123 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n124 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n125 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n126 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n127 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n128 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n129 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.rd riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n10 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n11 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n12 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n13 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n14 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n15 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n16 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n17 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n18 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n19 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.rs riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n130 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n131 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n132 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n133 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n134 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n135 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.clk riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n136 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n137 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n138 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n139 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n20 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n21 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n22 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n23 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n24 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.regwrite riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n25 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n26 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n27 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n28 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n29 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n140 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n141 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n142 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n143 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n144 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n145 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n146 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n147 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n148 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n149 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.read_data_1 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.read_data_2 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n30 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n31 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n32 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.register_memory riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n33 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n34 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n35 }
+gui_sg_addsignal -group "$_session_group_2" { riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n36 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.write_address riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n37 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n38 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n39 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n150 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n151 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n152 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n153 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n154 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n155 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n156 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n157 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n158 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n159 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n40 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n41 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n42 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n43 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n44 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n45 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n46 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n47 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n48 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n49 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n200 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n201 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n202 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n203 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n160 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n204 riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1.n161 }
+
+# Global: Highlighting
+
+# Global: Stack
+gui_change_stack_mode -mode list
+
+# Post database loading setting...
+
+# Save global setting...
+
+# Wave/List view global setting
+gui_cov_show_value -switch false
+
+# Close all empty TopLevel windows
+foreach __top [gui_ekki_get_window_ids -type TopLevel] {
+    if { [llength [gui_ekki_get_window_ids -parent $__top]] == 0} {
+        gui_close_window -window $__top
+    }
+}
+gui_set_loading_session_type noSession
+# DVE View/pane content session: 
+
+
+# Hier 'Hier.1'
+gui_show_window -window ${Hier.1}
+gui_list_set_filter -id ${Hier.1} -list { {Package 1} {All 0} {Process 1} {VirtPowSwitch 0} {UnnamedProcess 1} {UDP 0} {Function 1} {Block 1} {SrsnAndSpaCell 0} {OVA Unit 1} {LeafScCell 1} {LeafVlgCell 1} {Interface 1} {LeafVhdCell 1} {$unit 1} {NamedBlock 1} {Task 1} {VlgPackage 1} {ClassDef 1} {VirtIsoCell 0} }
+gui_list_set_filter -id ${Hier.1} -text {*}
+gui_change_design -id ${Hier.1} -design Sim
+catch {gui_list_expand -id ${Hier.1} riscv8bit_tb}
+catch {gui_list_expand -id ${Hier.1} riscv8bit_tb.uut}
+catch {gui_list_expand -id ${Hier.1} riscv8bit_tb.uut.id_to_wb1}
+catch {gui_list_expand -id ${Hier.1} riscv8bit_tb.uut.id_to_wb1.id_and_ex1}
+catch {gui_list_expand -id ${Hier.1} riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1}
+catch {gui_list_select -id ${Hier.1} {riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1}}
+gui_view_scroll -id ${Hier.1} -vertical -set 118
+gui_view_scroll -id ${Hier.1} -horizontal -set 0
+
+# Data 'Data.1'
+gui_list_set_filter -id ${Data.1} -list { {Buffer 1} {Input 1} {Others 1} {Linkage 1} {Output 1} {LowPower 1} {Parameter 1} {All 1} {Aggregate 1} {LibBaseMember 1} {Event 1} {Assertion 1} {Constant 1} {Interface 1} {BaseMembers 1} {Signal 1} {$unit 1} {Inout 1} {Variable 1} }
+gui_list_set_filter -id ${Data.1} -text {*}
+gui_list_show_data -id ${Data.1} {riscv8bit_tb.uut.id_to_wb1.id_and_ex1.id1.registerfile1}
+gui_view_scroll -id ${Data.1} -vertical -set 0
+gui_view_scroll -id ${Data.1} -horizontal -set 0
+gui_view_scroll -id ${Hier.1} -vertical -set 118
+gui_view_scroll -id ${Hier.1} -horizontal -set 0
+
+# Source 'Source.1'
+gui_src_value_annotate -id ${Source.1} -switch false
+gui_set_env TOGGLE::VALUEANNOTATE 0
+gui_open_source -id ${Source.1}  -replace -active riscv8bit_tb.input_stimulus /afs/ee.ust.hk/staff/ee/bxieaf/eesm5020/risc_baohui/layout_sim/../tb/riscv8bit_tb.v
+gui_view_scroll -id ${Source.1} -vertical -set 1605
+gui_src_set_reusable -id ${Source.1}
+
+# View 'Wave.1'
+gui_wv_sync -id ${Wave.1} -switch false
+set groupExD [gui_get_pref_value -category Wave -key exclusiveSG]
+gui_set_pref_value -category Wave -key exclusiveSG -value {false}
+set origWaveHeight [gui_get_pref_value -category Wave -key waveRowHeight]
+gui_list_set_height -id Wave -height 25
+set origGroupCreationState [gui_list_create_group_when_add -wave]
+gui_list_create_group_when_add -wave -disable
+gui_wv_zoom_timerange -id ${Wave.1} 0 380
+gui_list_add_group -id ${Wave.1} -after {New Group} {registerfile1}
+gui_seek_criteria -id ${Wave.1} {Any Edge}
+
+
+
+gui_set_env TOGGLE::DEFAULT_WAVE_WINDOW ${Wave.1}
+gui_set_pref_value -category Wave -key exclusiveSG -value $groupExD
+gui_list_set_height -id Wave -height $origWaveHeight
+if {$origGroupCreationState} {
+	gui_list_create_group_when_add -wave -enable
+}
+if { $groupExD } {
+ gui_msg_report -code DVWW028
+}
+gui_list_set_filter -id ${Wave.1} -list { {Buffer 1} {Input 1} {Others 1} {Linkage 1} {Output 1} {Parameter 1} {All 1} {Aggregate 1} {LibBaseMember 1} {Event 1} {Assertion 1} {Constant 1} {Interface 1} {BaseMembers 1} {Signal 1} {$unit 1} {Inout 1} {Variable 1} }
+gui_list_set_filter -id ${Wave.1} -text {*}
+gui_list_set_insertion_bar  -id ${Wave.1} -group registerfile1  -position in
+
+gui_view_scroll -id ${Wave.1} -vertical -set 0
+gui_show_grid -id ${Wave.1} -enable false
+# Restore toplevel window zorder
+# The toplevel window could be closed if it has no view/pane
+if {[gui_exist_window -window ${TopLevel.1}]} {
+	gui_set_active_window -window ${TopLevel.1}
+	gui_set_active_window -window ${Source.1}
+	gui_set_active_window -window ${HSPane.1}
+}
+if {[gui_exist_window -window ${TopLevel.2}]} {
+	gui_set_active_window -window ${TopLevel.2}
+	gui_set_active_window -window ${Wave.1}
+}
+#</Session>
+
